@@ -200,7 +200,7 @@ const answers = [
     },
     {  // 7
         "title": "Skinner",
-        "text": "<br>Steamed hams for dinner!",
+        "text": "<br>Leave your body, Seymour, leave your body...",
         "picture": "pics/skinn.png"
     },
     {  // 8

@@ -42,11 +42,10 @@
 }
 
 .quiz {
-    /* position: absolute; */
+
     position: relative;
     z-index: 1;
     color: aqua;
-    /* top: 90vh; */
     width: 80vh;
     height: 85vh;
     background-color: #c4c3d0;
@@ -68,7 +67,6 @@
 .question {
     position: absolute;
     top: 25vh;
-    /* left: 20px; */
     margin-inline: 30px;
     height: 13vh;
     width: auto;
@@ -219,32 +217,48 @@
 
 @media screen and (min-width: 260px) and (max-width: 768px) {
     .background {
-        height: 300vh;
+        height: 350vh;
     }
 
     .quiz {
-        width: 370px;
-        height: 90vh;
+        width: 95vw;
+        height: 80vh;
+        border-radius: 5px;
     }
 
     .quiz-pic {
-        width: 300px;
-        left: 20px;
+        width: 330px;
+        left: 2vw;
     }
 
     .question {
-        top: 30vh;
+        top: 20vh;
         font-size: x-large;
     }
 
     .quiz-image {
-        top: 50vh;
+        top: 40vh;
         width: 100px;
     }
 
+    .label {
+        bottom: 5vh;
+        width: 25vw;
+    }
+
+    .grid {
+        grid-template-columns: 4vh 12vh;
+        column-gap: 1vh;
+        /* transform: translateX(0%); */
+    }
+
+    .grid label {
+        width: 35vh;
+    }
+
     .radio {
-        top: 150vh;
-        left: 210px;
+        top: 170vh;
+        /* left: 50vw; */
     }
 
     .button {
@@ -270,10 +284,11 @@
         width: 100px;
         height: 10vh;
         bottom: -150px;
-        /* left: 50px; */
     }
 
     .answer {
         top: 88vh;
+        display: flex;
+        flex-direction: column;
     }
 }
